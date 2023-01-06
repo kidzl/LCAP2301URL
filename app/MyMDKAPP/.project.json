@@ -1,0 +1,62 @@
+{
+	"Credential": "cf",
+	"CF": {
+		"Target": "",
+		"Organization": "",
+		"Space": "",
+		"Deploy": {
+			"Description": "My SAP application",
+			"WebClient": {
+				"Runtime": "preview",
+				"URL": ""
+			},
+			"Destination": [
+				{
+					"CF": "URLTest-app-srv",
+					"MDK": "../service/URLTest/",
+					"URL": ""
+				}
+			]
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "",
+		"AppId": "lcap.URLTest.MyMDKAPP",
+		"Destination": []
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": ""
+	},
+	"LCAP": {
+		"FullName": "URLTest_MyMDKAPP",
+		"Service": [
+			{
+				"mdk": "MyMDKAPP/Services/service1.service",
+				"cap": {
+					"name": "URLTestService",
+					"sourcePath": "srv/service.cds",
+					"path": "/service/URLTest/",
+					"entryPath": "/service/URLTest",
+					"destination": "URLTest-app-srv",
+					"value": "0"
+				},
+				"links": [
+					{
+						"entity": "URLTestService.A_OperationalAcctgDocItemCube",
+						"files": [
+							"MyMDKAPP/Pages/A_OperationalAcctgDocItemCube/A_OperationalAcctgDocItemCube_Detail.page",
+							"MyMDKAPP/Pages/A_OperationalAcctgDocItemCube/A_OperationalAcctgDocItemCube_List.page"
+						]
+					}
+				]
+			}
+		],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	}
+}

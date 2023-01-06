@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="URLTestService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="A_OperationalAcctgDocItemCube" EntityType="URLTestService.A_OperationalAcctgDocItemCube"/>
+      </EntityContainer>
+      <EntityType Name="A_OperationalAcctgDocItemCube">
+        <Key>
+          <PropertyRef Name="CompanyCode"/>
+          <PropertyRef Name="FiscalYear"/>
+          <PropertyRef Name="AccountingDocument"/>
+          <PropertyRef Name="AccountingDocumentItem"/>
+        </Key>
+        <Property Name="CompanyCode" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="FiscalYear" Type="Edm.String" MaxLength="4" Nullable="false"/>
+        <Property Name="AccountingDocument" Type="Edm.String" MaxLength="10" Nullable="false"/>
+        <Property Name="AccountingDocumentItem" Type="Edm.String" MaxLength="3" Nullable="false"/>
+        <Property Name="CompanyCodeName" Type="Edm.String" MaxLength="25"/>
+        <Property Name="ChartOfAccounts" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AccountingDocumentItemType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ClearingDate" Type="Edm.Date"/>
+        <Property Name="ClearingCreationDate" Type="Edm.Date"/>
+        <Property Name="ClearingAccountingDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="IsCleared" Type="Edm.Boolean"/>
+        <Property Name="PostingKey" Type="Edm.String" MaxLength="2"/>
+        <Property Name="FinancialAccountType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="SpecialGLCode" Type="Edm.String" MaxLength="1"/>
+        <Property Name="SpecialGLTransactionType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="DebitCreditCode" Type="Edm.String" MaxLength="1"/>
+        <Property Name="BusinessArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="BusinessAreaName" Type="Edm.String" MaxLength="30"/>
+        <Property Name="PartnerBusinessArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="TaxCode" Type="Edm.String" MaxLength="2"/>
+        <Property Name="WithholdingTaxCode" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TaxType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="TransactionTypeDetermination" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ValueDate" Type="Edm.Date"/>
+        <Property Name="AssignmentReference" Type="Edm.String" MaxLength="18"/>
+        <Property Name="DocumentItemText" Type="Edm.String" MaxLength="50"/>
+        <Property Name="PartnerCompany" Type="Edm.String" MaxLength="6"/>
+        <Property Name="FinancialTransactionType" Type="Edm.String" MaxLength="3"/>
+        <Property Name="CorporateGroupAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PlanningLevel" Type="Edm.String" MaxLength="2"/>
+        <Property Name="ControllingArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ControllingAreaName" Type="Edm.String" MaxLength="25"/>
+        <Property Name="CostCenter" Type="Edm.String" MaxLength="10"/>
+        <Property Name="CostCenterName" Type="Edm.String" MaxLength="20"/>
+        <Property Name="Project" Type="Edm.String" MaxLength="24"/>
+        <Property Name="OrderID" Type="Edm.String" MaxLength="12"/>
+        <Property Name="BillingDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="SalesDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="SalesDocumentItem" Type="Edm.String" MaxLength="6"/>
+        <Property Name="ScheduleLine" Type="Edm.String" MaxLength="4"/>
+        <Property Name="MasterFixedAsset" Type="Edm.String" MaxLength="12"/>
+        <Property Name="FixedAsset" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AssetTransactionType" Type="Edm.String" MaxLength="3"/>
+        <Property Name="AssetValueDate" Type="Edm.Date"/>
+        <Property Name="PersonnelNumber" Type="Edm.String" MaxLength="8"/>
+        <Property Name="IsSalesRelated" Type="Edm.Boolean"/>
+        <Property Name="LineItemDisplayIsEnabled" Type="Edm.Boolean"/>
+        <Property Name="IsOpenItemManaged" Type="Edm.String" MaxLength="1"/>
+        <Property Name="IsNotCashDiscountLiable" Type="Edm.Boolean"/>
+        <Property Name="IsAutomaticallyCreated" Type="Edm.Boolean"/>
+        <Property Name="IsUsedInPaymentTransaction" Type="Edm.Boolean"/>
+        <Property Name="OperationalGLAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="GLAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="GLAccountName" Type="Edm.String" MaxLength="30"/>
+        <Property Name="GLAccountLongName" Type="Edm.String" MaxLength="50"/>
+        <Property Name="Customer" Type="Edm.String" MaxLength="10"/>
+        <Property Name="CustomerName" Type="Edm.String" MaxLength="80"/>
+        <Property Name="Supplier" Type="Edm.String" MaxLength="10"/>
+        <Property Name="SupplierName" Type="Edm.String" MaxLength="80"/>
+        <Property Name="BranchAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="IsBalanceSheetAccount" Type="Edm.Boolean"/>
+        <Property Name="ProfitLossAccountType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="SpecialGLAccountAssignment" Type="Edm.String" MaxLength="18"/>
+        <Property Name="DueCalculationBaseDate" Type="Edm.Date"/>
+        <Property Name="PaymentTerms" Type="Edm.String" MaxLength="4"/>
+        <Property Name="CashDiscount1Days" Type="Edm.Decimal" Scale="0" Precision="3"/>
+        <Property Name="CashDiscount2Days" Type="Edm.Decimal" Scale="0" Precision="3"/>
+        <Property Name="NetPaymentDays" Type="Edm.Decimal" Scale="0" Precision="3"/>
+        <Property Name="CashDiscount1Percent" Type="Edm.Decimal" Scale="3" Precision="5"/>
+        <Property Name="CashDiscount2Percent" Type="Edm.Decimal" Scale="3" Precision="5"/>
+        <Property Name="PaymentMethod" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PaymentBlockingReason" Type="Edm.String" MaxLength="1"/>
+        <Property Name="FixedCashDiscount" Type="Edm.String" MaxLength="1"/>
+        <Property Name="HouseBank" Type="Edm.String" MaxLength="5"/>
+        <Property Name="BPBankAccountInternalID" Type="Edm.String" MaxLength="4"/>
+        <Property Name="TaxDistributionCode1" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TaxDistributionCode2" Type="Edm.String" MaxLength="2"/>
+        <Property Name="TaxDistributionCode3" Type="Edm.String" MaxLength="2"/>
+        <Property Name="InvoiceReference" Type="Edm.String" MaxLength="10"/>
+        <Property Name="InvoiceReferenceFiscalYear" Type="Edm.String" MaxLength="4"/>
+        <Property Name="InvoiceItemReference" Type="Edm.String" MaxLength="3"/>
+        <Property Name="FollowOnDocumentType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="StateCentralBankPaymentReason" Type="Edm.String" MaxLength="3"/>
+        <Property Name="SupplyingCountry" Type="Edm.String" MaxLength="3"/>
+        <Property Name="InvoiceList" Type="Edm.String" MaxLength="8"/>
+        <Property Name="BillOfExchangeUsage" Type="Edm.String" MaxLength="1"/>
+        <Property Name="DunningKey" Type="Edm.String" MaxLength="1"/>
+        <Property Name="DunningBlockingReason" Type="Edm.String" MaxLength="1"/>
+        <Property Name="LastDunningDate" Type="Edm.Date"/>
+        <Property Name="DunningLevel" Type="Edm.String" MaxLength="1"/>
+        <Property Name="DunningArea" Type="Edm.String" MaxLength="2"/>
+        <Property Name="WithholdingTaxCertificate" Type="Edm.String" MaxLength="10"/>
+        <Property Name="Material" Type="Edm.String" MaxLength="40"/>
+        <Property Name="Product" Type="Edm.String" MaxLength="40"/>
+        <Property Name="Plant" Type="Edm.String" MaxLength="4"/>
+        <Property Name="PurchasingDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PurchasingDocumentItem" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AccountAssignmentNumber" Type="Edm.String" MaxLength="2"/>
+        <Property Name="IsCompletelyDelivered" Type="Edm.Boolean"/>
+        <Property Name="MaterialPriceControl" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ValuationArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="InventoryValuationType" Type="Edm.String" MaxLength="10"/>
+        <Property Name="VATRegistration" Type="Edm.String" MaxLength="20"/>
+        <Property Name="DelivOfGoodsDestCountry" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PaymentDifferenceReason" Type="Edm.String" MaxLength="3"/>
+        <Property Name="ProfitCenter" Type="Edm.String" MaxLength="10"/>
+        <Property Name="ProfitCenterName" Type="Edm.String" MaxLength="20"/>
+        <Property Name="JointVenture" Type="Edm.String" MaxLength="6"/>
+        <Property Name="JointVentureCostRecoveryCode" Type="Edm.String" MaxLength="2"/>
+        <Property Name="JointVentureEquityGroup" Type="Edm.String" MaxLength="3"/>
+        <Property Name="TreasuryContractType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="AssetContract" Type="Edm.String" MaxLength="13"/>
+        <Property Name="CashFlowType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="TaxJurisdiction" Type="Edm.String" MaxLength="15"/>
+        <Property Name="RealEstateObject" Type="Edm.String" MaxLength="40"/>
+        <Property Name="SettlementReferenceDate" Type="Edm.Date"/>
+        <Property Name="CommitmentItem" Type="Edm.String" MaxLength="24"/>
+        <Property Name="CostObject" Type="Edm.String" MaxLength="12"/>
+        <Property Name="ProjectNetwork" Type="Edm.String" MaxLength="12"/>
+        <Property Name="OrderInternalBillOfOperations" Type="Edm.String" MaxLength="10"/>
+        <Property Name="OrderIntBillOfOperationsItem" Type="Edm.String" MaxLength="8"/>
+        <Property Name="WBSElementInternalID" Type="Edm.String" MaxLength="8"/>
+        <Property Name="ProfitabilitySegment" Type="Edm.String" MaxLength="10"/>
+        <Property Name="JointVentureEquityType" Type="Edm.String" MaxLength="3"/>
+        <Property Name="IsEUTriangularDeal" Type="Edm.Boolean"/>
+        <Property Name="CostOriginGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="CompanyCodeCurrencyDetnMethod" Type="Edm.String" MaxLength="1"/>
+        <Property Name="ClearingIsReversed" Type="Edm.Boolean"/>
+        <Property Name="PaymentMethodSupplement" Type="Edm.String" MaxLength="2"/>
+        <Property Name="AlternativeGLAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="FundsCenter" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Fund" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PartnerProfitCenter" Type="Edm.String" MaxLength="10"/>
+        <Property Name="Reference1IDByBusinessPartner" Type="Edm.String" MaxLength="12"/>
+        <Property Name="Reference2IDByBusinessPartner" Type="Edm.String" MaxLength="12"/>
+        <Property Name="IsNegativePosting" Type="Edm.Boolean"/>
+        <Property Name="PaymentCardItem" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PaymentCardPaymentSettlement" Type="Edm.String" MaxLength="10"/>
+        <Property Name="CreditControlArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="Reference3IDByBusinessPartner" Type="Edm.String" MaxLength="20"/>
+        <Property Name="DataExchangeInstruction1" Type="Edm.String" MaxLength="2"/>
+        <Property Name="DataExchangeInstruction2" Type="Edm.String" MaxLength="2"/>
+        <Property Name="DataExchangeInstruction3" Type="Edm.String" MaxLength="2"/>
+        <Property Name="DataExchangeInstruction4" Type="Edm.String" MaxLength="2"/>
+        <Property Name="Region" Type="Edm.String" MaxLength="3"/>
+        <Property Name="HasPaymentOrder" Type="Edm.Boolean"/>
+        <Property Name="PaymentReference" Type="Edm.String" MaxLength="30"/>
+        <Property Name="TaxDeterminationDate" Type="Edm.Date"/>
+        <Property Name="ClearingItem" Type="Edm.Decimal" Scale="0" Precision="5"/>
+        <Property Name="BusinessPlace" Type="Edm.String" MaxLength="4"/>
+        <Property Name="TaxSection" Type="Edm.String" MaxLength="4"/>
+        <Property Name="CostCtrActivityType" Type="Edm.String" MaxLength="6"/>
+        <Property Name="AccountsReceivableIsPledged" Type="Edm.String" MaxLength="2"/>
+        <Property Name="BusinessProcess" Type="Edm.String" MaxLength="12"/>
+        <Property Name="GrantID" Type="Edm.String" MaxLength="20"/>
+        <Property Name="FunctionalArea" Type="Edm.String" MaxLength="16"/>
+        <Property Name="FunctionalAreaName" Type="Edm.String" MaxLength="30"/>
+        <Property Name="CustomerIsInExecution" Type="Edm.Boolean"/>
+        <Property Name="FundedProgram" Type="Edm.String" MaxLength="24"/>
+        <Property Name="ClearingDocFiscalYear" Type="Edm.String" MaxLength="4"/>
+        <Property Name="LedgerGLLineItem" Type="Edm.String" MaxLength="6"/>
+        <Property Name="Segment" Type="Edm.String" MaxLength="10"/>
+        <Property Name="SegmentName" Type="Edm.String" MaxLength="50"/>
+        <Property Name="PartnerSegment" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PartnerFunctionalArea" Type="Edm.String" MaxLength="16"/>
+        <Property Name="HouseBankAccount" Type="Edm.String" MaxLength="5"/>
+        <Property Name="CostElement" Type="Edm.String" MaxLength="10"/>
+        <Property Name="SEPAMandate" Type="Edm.String" MaxLength="35"/>
+        <Property Name="ReferenceDocumentType" Type="Edm.String" MaxLength="5"/>
+        <Property Name="OriginalReferenceDocument" Type="Edm.String" MaxLength="20"/>
+        <Property Name="ReferenceDocumentLogicalSystem" Type="Edm.String" MaxLength="10"/>
+        <Property Name="AccountingDocumentItemRef" Type="Edm.String" MaxLength="10"/>
+        <Property Name="FiscalPeriod" Type="Edm.String" MaxLength="3"/>
+        <Property Name="AccountingDocumentCategory" Type="Edm.String" MaxLength="1"/>
+        <Property Name="AccountingDocumentCategoryName" Type="Edm.String" MaxLength="60"/>
+        <Property Name="PostingDate" Type="Edm.Date"/>
+        <Property Name="DocumentDate" Type="Edm.Date"/>
+        <Property Name="AccountingDocumentType" Type="Edm.String" MaxLength="2"/>
+        <Property Name="AccountingDocumentTypeName" Type="Edm.String" MaxLength="20"/>
+        <Property Name="NetDueDate" Type="Edm.Date"/>
+        <Property Name="CashDiscount1DueDate" Type="Edm.Date"/>
+        <Property Name="CashDiscount2DueDate" Type="Edm.Date"/>
+        <Property Name="OffsettingAccount" Type="Edm.String" MaxLength="10"/>
+        <Property Name="OffsettingAccountType" Type="Edm.String" MaxLength="1"/>
+        <Property Name="PartnerFund" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PartnerGrant" Type="Edm.String" MaxLength="20"/>
+        <Property Name="BudgetPeriod" Type="Edm.String" MaxLength="10"/>
+        <Property Name="PartnerBudgetPeriod" Type="Edm.String" MaxLength="10"/>
+        <Property Name="BranchCode" Type="Edm.String" MaxLength="5"/>
+        <Property Name="CompanyCodeCurrency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AmountInCompanyCodeCurrency" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="TaxAmountInCoCodeCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="TaxBaseAmountInCoCodeCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="ValuationDiffAmtInCoCodeCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="CashDiscountAmtInCoCodeCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="InvoiceAmtInCoCodeCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="TransactionCurrency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AmountInTransactionCurrency" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="OriginalTaxBaseAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="TaxAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="TaxBaseAmountInTransCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="WithholdingTaxBaseAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="PlannedAmtInTransactionCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="CashDiscountBaseAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="CashDiscountAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="NetPaymentAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="WithholdingTaxAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="WithholdingTaxExemptionAmt" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="InvoiceAmountInFrgnCurrency" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="BalanceTransactionCurrency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AmountInBalanceTransacCrcy" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="AdditionalCurrency1" Type="Edm.String" MaxLength="5"/>
+        <Property Name="ValuationDiffAmtInAddlCrcy1" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="AmountInAdditionalCurrency1" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="AdditionalCurrency2" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AmountInAdditionalCurrency2" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="ValuationDiffAmtInAddlCrcy2" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="PaymentCurrency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="AmountInPaymentCurrency" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="CreditControlAreaCurrency" Type="Edm.String" MaxLength="5"/>
+        <Property Name="HedgedAmount" Type="Edm.Decimal" Scale="3" Precision="24"/>
+        <Property Name="BaseUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="Quantity" Type="Edm.Decimal" Scale="3" Precision="23"/>
+        <Property Name="GoodsMovementEntryUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="QuantityInEntryUnit" Type="Edm.Decimal" Scale="3" Precision="13"/>
+        <Property Name="PurchasingDocumentPriceUnit" Type="Edm.String" MaxLength="3"/>
+        <Property Name="PurchaseOrderQty" Type="Edm.Decimal" Scale="3" Precision="13"/>
+        <Property Name="MaterialPriceUnitQty" Type="Edm.Decimal" Scale="0" Precision="5"/>
+        <Property Name="NumberOfItems" Type="Edm.Decimal" Scale="0" Precision="12"/>
+        <Property Name="AccountingDocumentCreationDate" Type="Edm.Date"/>
+        <Property Name="CreationTime" Type="Edm.TimeOfDay"/>
+        <Property Name="LastChangeDate" Type="Edm.Date"/>
+        <Property Name="ExchangeRateDate" Type="Edm.Date"/>
+        <Property Name="AccountingDocCreatedByUser" Type="Edm.String" MaxLength="12"/>
+        <Property Name="TransactionCode" Type="Edm.String" MaxLength="20"/>
+        <Property Name="IntercompanyTransaction" Type="Edm.String" MaxLength="16"/>
+        <Property Name="DocumentReferenceID" Type="Edm.String" MaxLength="16"/>
+        <Property Name="RecurringAccountingDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="ReverseDocument" Type="Edm.String" MaxLength="10"/>
+        <Property Name="ReverseDocumentFiscalYear" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AccountingDocumentHeaderText" Type="Edm.String" MaxLength="25"/>
+        <Property Name="ExchangeRate" Type="Edm.Decimal" Scale="5" Precision="9"/>
+        <Property Name="BusinessTransactionType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="BatchInputSession" Type="Edm.String" MaxLength="12"/>
+        <Property Name="FinancialManagementArea" Type="Edm.String" MaxLength="4"/>
+        <Property Name="ReversalIsPlanned" Type="Edm.Boolean"/>
+        <Property Name="PlannedReversalDate" Type="Edm.Date"/>
+        <Property Name="TaxIsCalculatedAutomatically" Type="Edm.Boolean"/>
+        <Property Name="TaxBaseAmountIsNetAmount" Type="Edm.Boolean"/>
+        <Property Name="SourceCompanyCode" Type="Edm.String" MaxLength="4"/>
+        <Property Name="LogicalSystem" Type="Edm.String" MaxLength="10"/>
+        <Property Name="TaxExchangeRate" Type="Edm.Decimal" Scale="5" Precision="9"/>
+        <Property Name="ReversalReason" Type="Edm.String" MaxLength="2"/>
+        <Property Name="Branch" Type="Edm.String" MaxLength="4"/>
+        <Property Name="Reference1InDocumentHeader" Type="Edm.String" MaxLength="20"/>
+        <Property Name="Reference2InDocumentHeader" Type="Edm.String" MaxLength="20"/>
+        <Property Name="InvoiceReceiptDate" Type="Edm.Date"/>
+        <Property Name="Ledger" Type="Edm.String" MaxLength="2"/>
+        <Property Name="LedgerGroup" Type="Edm.String" MaxLength="4"/>
+        <Property Name="AlternativeReferenceDocument" Type="Edm.String" MaxLength="26"/>
+        <Property Name="TaxReportingDate" Type="Edm.Date"/>
+        <Property Name="AccountingDocumentClass" Type="Edm.String" MaxLength="6"/>
+        <Property Name="ExchangeRateType" Type="Edm.String" MaxLength="4"/>
+        <Property Name="LatePaymentReason" Type="Edm.String" MaxLength="2"/>
+        <Property Name="SalesDocumentCondition" Type="Edm.String" MaxLength="10"/>
+        <Property Name="IsReversal" Type="Edm.Boolean"/>
+        <Property Name="IsReversed" Type="Edm.Boolean"/>
+      </EntityType>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

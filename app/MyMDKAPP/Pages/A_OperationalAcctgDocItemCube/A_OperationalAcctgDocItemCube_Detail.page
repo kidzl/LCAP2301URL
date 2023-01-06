@@ -1,0 +1,1117 @@
+{
+	"Caption": "A_OperationalAcctgDocItemCube Detail",
+	"DesignTimeTarget": {
+		"Service": "/MyMDKAPP/Services/service1.service",
+		"EntitySet": "A_OperationalAcctgDocItemCube",
+		"QueryOptions": ""
+	},
+	"ActionBar": {
+		"Items": []
+	},
+	"Controls": [
+		{
+			"Sections": [
+				{
+					"ObjectHeader": {
+						"Tags": [],
+						"DetailImage": "",
+						"HeadlineText": "{CompanyCodeName}",
+						"Subhead": "{CompanyCode}",
+						"BodyText": "",
+						"Footnote": "{AccountingDocument}",
+						"Description": "{FiscalYear}",
+						"StatusText": "{AccountingDocumentItem}",
+						"StatusImage": "",
+						"SubstatusImage": "",
+						"SubstatusText": "{ChartOfAccounts}"
+					},
+					"_Type": "Section.Type.ObjectHeader"
+				},
+				{
+					"KeyAndValues": [
+						{
+							"KeyName": "CompanyCode",
+							"Value": "{CompanyCode}"
+						},
+						{
+							"KeyName": "FiscalYear",
+							"Value": "{FiscalYear}"
+						},
+						{
+							"KeyName": "AccountingDocument",
+							"Value": "{AccountingDocument}"
+						},
+						{
+							"KeyName": "AccountingDocumentItem",
+							"Value": "{AccountingDocumentItem}"
+						},
+						{
+							"KeyName": "CompanyCodeName",
+							"Value": "{CompanyCodeName}"
+						},
+						{
+							"KeyName": "ChartOfAccounts",
+							"Value": "{ChartOfAccounts}"
+						},
+						{
+							"KeyName": "AccountingDocumentItemType",
+							"Value": "{AccountingDocumentItemType}"
+						},
+						{
+							"KeyName": "ClearingDate",
+							"Value": "{ClearingDate}"
+						},
+						{
+							"KeyName": "ClearingCreationDate",
+							"Value": "{ClearingCreationDate}"
+						},
+						{
+							"KeyName": "ClearingAccountingDocument",
+							"Value": "{ClearingAccountingDocument}"
+						},
+						{
+							"KeyName": "IsCleared",
+							"Value": "{IsCleared}"
+						},
+						{
+							"KeyName": "PostingKey",
+							"Value": "{PostingKey}"
+						},
+						{
+							"KeyName": "FinancialAccountType",
+							"Value": "{FinancialAccountType}"
+						},
+						{
+							"KeyName": "SpecialGLCode",
+							"Value": "{SpecialGLCode}"
+						},
+						{
+							"KeyName": "SpecialGLTransactionType",
+							"Value": "{SpecialGLTransactionType}"
+						},
+						{
+							"KeyName": "DebitCreditCode",
+							"Value": "{DebitCreditCode}"
+						},
+						{
+							"KeyName": "BusinessArea",
+							"Value": "{BusinessArea}"
+						},
+						{
+							"KeyName": "BusinessAreaName",
+							"Value": "{BusinessAreaName}"
+						},
+						{
+							"KeyName": "PartnerBusinessArea",
+							"Value": "{PartnerBusinessArea}"
+						},
+						{
+							"KeyName": "TaxCode",
+							"Value": "{TaxCode}"
+						},
+						{
+							"KeyName": "WithholdingTaxCode",
+							"Value": "{WithholdingTaxCode}"
+						},
+						{
+							"KeyName": "TaxType",
+							"Value": "{TaxType}"
+						},
+						{
+							"KeyName": "TransactionTypeDetermination",
+							"Value": "{TransactionTypeDetermination}"
+						},
+						{
+							"KeyName": "ValueDate",
+							"Value": "{ValueDate}"
+						},
+						{
+							"KeyName": "AssignmentReference",
+							"Value": "{AssignmentReference}"
+						},
+						{
+							"KeyName": "DocumentItemText",
+							"Value": "{DocumentItemText}"
+						},
+						{
+							"KeyName": "PartnerCompany",
+							"Value": "{PartnerCompany}"
+						},
+						{
+							"KeyName": "FinancialTransactionType",
+							"Value": "{FinancialTransactionType}"
+						},
+						{
+							"KeyName": "CorporateGroupAccount",
+							"Value": "{CorporateGroupAccount}"
+						},
+						{
+							"KeyName": "PlanningLevel",
+							"Value": "{PlanningLevel}"
+						},
+						{
+							"KeyName": "ControllingArea",
+							"Value": "{ControllingArea}"
+						},
+						{
+							"KeyName": "ControllingAreaName",
+							"Value": "{ControllingAreaName}"
+						},
+						{
+							"KeyName": "CostCenter",
+							"Value": "{CostCenter}"
+						},
+						{
+							"KeyName": "CostCenterName",
+							"Value": "{CostCenterName}"
+						},
+						{
+							"KeyName": "Project",
+							"Value": "{Project}"
+						},
+						{
+							"KeyName": "OrderID",
+							"Value": "{OrderID}"
+						},
+						{
+							"KeyName": "BillingDocument",
+							"Value": "{BillingDocument}"
+						},
+						{
+							"KeyName": "SalesDocument",
+							"Value": "{SalesDocument}"
+						},
+						{
+							"KeyName": "SalesDocumentItem",
+							"Value": "{SalesDocumentItem}"
+						},
+						{
+							"KeyName": "ScheduleLine",
+							"Value": "{ScheduleLine}"
+						},
+						{
+							"KeyName": "MasterFixedAsset",
+							"Value": "{MasterFixedAsset}"
+						},
+						{
+							"KeyName": "FixedAsset",
+							"Value": "{FixedAsset}"
+						},
+						{
+							"KeyName": "AssetTransactionType",
+							"Value": "{AssetTransactionType}"
+						},
+						{
+							"KeyName": "AssetValueDate",
+							"Value": "{AssetValueDate}"
+						},
+						{
+							"KeyName": "PersonnelNumber",
+							"Value": "{PersonnelNumber}"
+						},
+						{
+							"KeyName": "IsSalesRelated",
+							"Value": "{IsSalesRelated}"
+						},
+						{
+							"KeyName": "LineItemDisplayIsEnabled",
+							"Value": "{LineItemDisplayIsEnabled}"
+						},
+						{
+							"KeyName": "IsOpenItemManaged",
+							"Value": "{IsOpenItemManaged}"
+						},
+						{
+							"KeyName": "IsNotCashDiscountLiable",
+							"Value": "{IsNotCashDiscountLiable}"
+						},
+						{
+							"KeyName": "IsAutomaticallyCreated",
+							"Value": "{IsAutomaticallyCreated}"
+						},
+						{
+							"KeyName": "IsUsedInPaymentTransaction",
+							"Value": "{IsUsedInPaymentTransaction}"
+						},
+						{
+							"KeyName": "OperationalGLAccount",
+							"Value": "{OperationalGLAccount}"
+						},
+						{
+							"KeyName": "GLAccount",
+							"Value": "{GLAccount}"
+						},
+						{
+							"KeyName": "GLAccountName",
+							"Value": "{GLAccountName}"
+						},
+						{
+							"KeyName": "GLAccountLongName",
+							"Value": "{GLAccountLongName}"
+						},
+						{
+							"KeyName": "Customer",
+							"Value": "{Customer}"
+						},
+						{
+							"KeyName": "CustomerName",
+							"Value": "{CustomerName}"
+						},
+						{
+							"KeyName": "Supplier",
+							"Value": "{Supplier}"
+						},
+						{
+							"KeyName": "SupplierName",
+							"Value": "{SupplierName}"
+						},
+						{
+							"KeyName": "BranchAccount",
+							"Value": "{BranchAccount}"
+						},
+						{
+							"KeyName": "IsBalanceSheetAccount",
+							"Value": "{IsBalanceSheetAccount}"
+						},
+						{
+							"KeyName": "ProfitLossAccountType",
+							"Value": "{ProfitLossAccountType}"
+						},
+						{
+							"KeyName": "SpecialGLAccountAssignment",
+							"Value": "{SpecialGLAccountAssignment}"
+						},
+						{
+							"KeyName": "DueCalculationBaseDate",
+							"Value": "{DueCalculationBaseDate}"
+						},
+						{
+							"KeyName": "PaymentTerms",
+							"Value": "{PaymentTerms}"
+						},
+						{
+							"KeyName": "CashDiscount1Days",
+							"Value": "{CashDiscount1Days}"
+						},
+						{
+							"KeyName": "CashDiscount2Days",
+							"Value": "{CashDiscount2Days}"
+						},
+						{
+							"KeyName": "NetPaymentDays",
+							"Value": "{NetPaymentDays}"
+						},
+						{
+							"KeyName": "CashDiscount1Percent",
+							"Value": "{CashDiscount1Percent}"
+						},
+						{
+							"KeyName": "CashDiscount2Percent",
+							"Value": "{CashDiscount2Percent}"
+						},
+						{
+							"KeyName": "PaymentMethod",
+							"Value": "{PaymentMethod}"
+						},
+						{
+							"KeyName": "PaymentBlockingReason",
+							"Value": "{PaymentBlockingReason}"
+						},
+						{
+							"KeyName": "FixedCashDiscount",
+							"Value": "{FixedCashDiscount}"
+						},
+						{
+							"KeyName": "HouseBank",
+							"Value": "{HouseBank}"
+						},
+						{
+							"KeyName": "BPBankAccountInternalID",
+							"Value": "{BPBankAccountInternalID}"
+						},
+						{
+							"KeyName": "TaxDistributionCode1",
+							"Value": "{TaxDistributionCode1}"
+						},
+						{
+							"KeyName": "TaxDistributionCode2",
+							"Value": "{TaxDistributionCode2}"
+						},
+						{
+							"KeyName": "TaxDistributionCode3",
+							"Value": "{TaxDistributionCode3}"
+						},
+						{
+							"KeyName": "InvoiceReference",
+							"Value": "{InvoiceReference}"
+						},
+						{
+							"KeyName": "InvoiceReferenceFiscalYear",
+							"Value": "{InvoiceReferenceFiscalYear}"
+						},
+						{
+							"KeyName": "InvoiceItemReference",
+							"Value": "{InvoiceItemReference}"
+						},
+						{
+							"KeyName": "FollowOnDocumentType",
+							"Value": "{FollowOnDocumentType}"
+						},
+						{
+							"KeyName": "StateCentralBankPaymentReason",
+							"Value": "{StateCentralBankPaymentReason}"
+						},
+						{
+							"KeyName": "SupplyingCountry",
+							"Value": "{SupplyingCountry}"
+						},
+						{
+							"KeyName": "InvoiceList",
+							"Value": "{InvoiceList}"
+						},
+						{
+							"KeyName": "BillOfExchangeUsage",
+							"Value": "{BillOfExchangeUsage}"
+						},
+						{
+							"KeyName": "DunningKey",
+							"Value": "{DunningKey}"
+						},
+						{
+							"KeyName": "DunningBlockingReason",
+							"Value": "{DunningBlockingReason}"
+						},
+						{
+							"KeyName": "LastDunningDate",
+							"Value": "{LastDunningDate}"
+						},
+						{
+							"KeyName": "DunningLevel",
+							"Value": "{DunningLevel}"
+						},
+						{
+							"KeyName": "DunningArea",
+							"Value": "{DunningArea}"
+						},
+						{
+							"KeyName": "WithholdingTaxCertificate",
+							"Value": "{WithholdingTaxCertificate}"
+						},
+						{
+							"KeyName": "Material",
+							"Value": "{Material}"
+						},
+						{
+							"KeyName": "Product",
+							"Value": "{Product}"
+						},
+						{
+							"KeyName": "Plant",
+							"Value": "{Plant}"
+						},
+						{
+							"KeyName": "PurchasingDocument",
+							"Value": "{PurchasingDocument}"
+						},
+						{
+							"KeyName": "PurchasingDocumentItem",
+							"Value": "{PurchasingDocumentItem}"
+						},
+						{
+							"KeyName": "AccountAssignmentNumber",
+							"Value": "{AccountAssignmentNumber}"
+						},
+						{
+							"KeyName": "IsCompletelyDelivered",
+							"Value": "{IsCompletelyDelivered}"
+						},
+						{
+							"KeyName": "MaterialPriceControl",
+							"Value": "{MaterialPriceControl}"
+						},
+						{
+							"KeyName": "ValuationArea",
+							"Value": "{ValuationArea}"
+						},
+						{
+							"KeyName": "InventoryValuationType",
+							"Value": "{InventoryValuationType}"
+						},
+						{
+							"KeyName": "VATRegistration",
+							"Value": "{VATRegistration}"
+						},
+						{
+							"KeyName": "DelivOfGoodsDestCountry",
+							"Value": "{DelivOfGoodsDestCountry}"
+						},
+						{
+							"KeyName": "PaymentDifferenceReason",
+							"Value": "{PaymentDifferenceReason}"
+						},
+						{
+							"KeyName": "ProfitCenter",
+							"Value": "{ProfitCenter}"
+						},
+						{
+							"KeyName": "ProfitCenterName",
+							"Value": "{ProfitCenterName}"
+						},
+						{
+							"KeyName": "JointVenture",
+							"Value": "{JointVenture}"
+						},
+						{
+							"KeyName": "JointVentureCostRecoveryCode",
+							"Value": "{JointVentureCostRecoveryCode}"
+						},
+						{
+							"KeyName": "JointVentureEquityGroup",
+							"Value": "{JointVentureEquityGroup}"
+						},
+						{
+							"KeyName": "TreasuryContractType",
+							"Value": "{TreasuryContractType}"
+						},
+						{
+							"KeyName": "AssetContract",
+							"Value": "{AssetContract}"
+						},
+						{
+							"KeyName": "CashFlowType",
+							"Value": "{CashFlowType}"
+						},
+						{
+							"KeyName": "TaxJurisdiction",
+							"Value": "{TaxJurisdiction}"
+						},
+						{
+							"KeyName": "RealEstateObject",
+							"Value": "{RealEstateObject}"
+						},
+						{
+							"KeyName": "SettlementReferenceDate",
+							"Value": "{SettlementReferenceDate}"
+						},
+						{
+							"KeyName": "CommitmentItem",
+							"Value": "{CommitmentItem}"
+						},
+						{
+							"KeyName": "CostObject",
+							"Value": "{CostObject}"
+						},
+						{
+							"KeyName": "ProjectNetwork",
+							"Value": "{ProjectNetwork}"
+						},
+						{
+							"KeyName": "OrderInternalBillOfOperations",
+							"Value": "{OrderInternalBillOfOperations}"
+						},
+						{
+							"KeyName": "OrderIntBillOfOperationsItem",
+							"Value": "{OrderIntBillOfOperationsItem}"
+						},
+						{
+							"KeyName": "WBSElementInternalID",
+							"Value": "{WBSElementInternalID}"
+						},
+						{
+							"KeyName": "ProfitabilitySegment",
+							"Value": "{ProfitabilitySegment}"
+						},
+						{
+							"KeyName": "JointVentureEquityType",
+							"Value": "{JointVentureEquityType}"
+						},
+						{
+							"KeyName": "IsEUTriangularDeal",
+							"Value": "{IsEUTriangularDeal}"
+						},
+						{
+							"KeyName": "CostOriginGroup",
+							"Value": "{CostOriginGroup}"
+						},
+						{
+							"KeyName": "CompanyCodeCurrencyDetnMethod",
+							"Value": "{CompanyCodeCurrencyDetnMethod}"
+						},
+						{
+							"KeyName": "ClearingIsReversed",
+							"Value": "{ClearingIsReversed}"
+						},
+						{
+							"KeyName": "PaymentMethodSupplement",
+							"Value": "{PaymentMethodSupplement}"
+						},
+						{
+							"KeyName": "AlternativeGLAccount",
+							"Value": "{AlternativeGLAccount}"
+						},
+						{
+							"KeyName": "FundsCenter",
+							"Value": "{FundsCenter}"
+						},
+						{
+							"KeyName": "Fund",
+							"Value": "{Fund}"
+						},
+						{
+							"KeyName": "PartnerProfitCenter",
+							"Value": "{PartnerProfitCenter}"
+						},
+						{
+							"KeyName": "Reference1IDByBusinessPartner",
+							"Value": "{Reference1IDByBusinessPartner}"
+						},
+						{
+							"KeyName": "Reference2IDByBusinessPartner",
+							"Value": "{Reference2IDByBusinessPartner}"
+						},
+						{
+							"KeyName": "IsNegativePosting",
+							"Value": "{IsNegativePosting}"
+						},
+						{
+							"KeyName": "PaymentCardItem",
+							"Value": "{PaymentCardItem}"
+						},
+						{
+							"KeyName": "PaymentCardPaymentSettlement",
+							"Value": "{PaymentCardPaymentSettlement}"
+						},
+						{
+							"KeyName": "CreditControlArea",
+							"Value": "{CreditControlArea}"
+						},
+						{
+							"KeyName": "Reference3IDByBusinessPartner",
+							"Value": "{Reference3IDByBusinessPartner}"
+						},
+						{
+							"KeyName": "DataExchangeInstruction1",
+							"Value": "{DataExchangeInstruction1}"
+						},
+						{
+							"KeyName": "DataExchangeInstruction2",
+							"Value": "{DataExchangeInstruction2}"
+						},
+						{
+							"KeyName": "DataExchangeInstruction3",
+							"Value": "{DataExchangeInstruction3}"
+						},
+						{
+							"KeyName": "DataExchangeInstruction4",
+							"Value": "{DataExchangeInstruction4}"
+						},
+						{
+							"KeyName": "Region",
+							"Value": "{Region}"
+						},
+						{
+							"KeyName": "HasPaymentOrder",
+							"Value": "{HasPaymentOrder}"
+						},
+						{
+							"KeyName": "PaymentReference",
+							"Value": "{PaymentReference}"
+						},
+						{
+							"KeyName": "TaxDeterminationDate",
+							"Value": "{TaxDeterminationDate}"
+						},
+						{
+							"KeyName": "ClearingItem",
+							"Value": "{ClearingItem}"
+						},
+						{
+							"KeyName": "BusinessPlace",
+							"Value": "{BusinessPlace}"
+						},
+						{
+							"KeyName": "TaxSection",
+							"Value": "{TaxSection}"
+						},
+						{
+							"KeyName": "CostCtrActivityType",
+							"Value": "{CostCtrActivityType}"
+						},
+						{
+							"KeyName": "AccountsReceivableIsPledged",
+							"Value": "{AccountsReceivableIsPledged}"
+						},
+						{
+							"KeyName": "BusinessProcess",
+							"Value": "{BusinessProcess}"
+						},
+						{
+							"KeyName": "GrantID",
+							"Value": "{GrantID}"
+						},
+						{
+							"KeyName": "FunctionalArea",
+							"Value": "{FunctionalArea}"
+						},
+						{
+							"KeyName": "FunctionalAreaName",
+							"Value": "{FunctionalAreaName}"
+						},
+						{
+							"KeyName": "CustomerIsInExecution",
+							"Value": "{CustomerIsInExecution}"
+						},
+						{
+							"KeyName": "FundedProgram",
+							"Value": "{FundedProgram}"
+						},
+						{
+							"KeyName": "ClearingDocFiscalYear",
+							"Value": "{ClearingDocFiscalYear}"
+						},
+						{
+							"KeyName": "LedgerGLLineItem",
+							"Value": "{LedgerGLLineItem}"
+						},
+						{
+							"KeyName": "Segment",
+							"Value": "{Segment}"
+						},
+						{
+							"KeyName": "SegmentName",
+							"Value": "{SegmentName}"
+						},
+						{
+							"KeyName": "PartnerSegment",
+							"Value": "{PartnerSegment}"
+						},
+						{
+							"KeyName": "PartnerFunctionalArea",
+							"Value": "{PartnerFunctionalArea}"
+						},
+						{
+							"KeyName": "HouseBankAccount",
+							"Value": "{HouseBankAccount}"
+						},
+						{
+							"KeyName": "CostElement",
+							"Value": "{CostElement}"
+						},
+						{
+							"KeyName": "SEPAMandate",
+							"Value": "{SEPAMandate}"
+						},
+						{
+							"KeyName": "ReferenceDocumentType",
+							"Value": "{ReferenceDocumentType}"
+						},
+						{
+							"KeyName": "OriginalReferenceDocument",
+							"Value": "{OriginalReferenceDocument}"
+						},
+						{
+							"KeyName": "ReferenceDocumentLogicalSystem",
+							"Value": "{ReferenceDocumentLogicalSystem}"
+						},
+						{
+							"KeyName": "AccountingDocumentItemRef",
+							"Value": "{AccountingDocumentItemRef}"
+						},
+						{
+							"KeyName": "FiscalPeriod",
+							"Value": "{FiscalPeriod}"
+						},
+						{
+							"KeyName": "AccountingDocumentCategory",
+							"Value": "{AccountingDocumentCategory}"
+						},
+						{
+							"KeyName": "AccountingDocumentCategoryName",
+							"Value": "{AccountingDocumentCategoryName}"
+						},
+						{
+							"KeyName": "PostingDate",
+							"Value": "{PostingDate}"
+						},
+						{
+							"KeyName": "DocumentDate",
+							"Value": "{DocumentDate}"
+						},
+						{
+							"KeyName": "AccountingDocumentType",
+							"Value": "{AccountingDocumentType}"
+						},
+						{
+							"KeyName": "AccountingDocumentTypeName",
+							"Value": "{AccountingDocumentTypeName}"
+						},
+						{
+							"KeyName": "NetDueDate",
+							"Value": "{NetDueDate}"
+						},
+						{
+							"KeyName": "CashDiscount1DueDate",
+							"Value": "{CashDiscount1DueDate}"
+						},
+						{
+							"KeyName": "CashDiscount2DueDate",
+							"Value": "{CashDiscount2DueDate}"
+						},
+						{
+							"KeyName": "OffsettingAccount",
+							"Value": "{OffsettingAccount}"
+						},
+						{
+							"KeyName": "OffsettingAccountType",
+							"Value": "{OffsettingAccountType}"
+						},
+						{
+							"KeyName": "PartnerFund",
+							"Value": "{PartnerFund}"
+						},
+						{
+							"KeyName": "PartnerGrant",
+							"Value": "{PartnerGrant}"
+						},
+						{
+							"KeyName": "BudgetPeriod",
+							"Value": "{BudgetPeriod}"
+						},
+						{
+							"KeyName": "PartnerBudgetPeriod",
+							"Value": "{PartnerBudgetPeriod}"
+						},
+						{
+							"KeyName": "BranchCode",
+							"Value": "{BranchCode}"
+						},
+						{
+							"KeyName": "CompanyCodeCurrency",
+							"Value": "{CompanyCodeCurrency}"
+						},
+						{
+							"KeyName": "AmountInCompanyCodeCurrency",
+							"Value": "{AmountInCompanyCodeCurrency}"
+						},
+						{
+							"KeyName": "TaxAmountInCoCodeCrcy",
+							"Value": "{TaxAmountInCoCodeCrcy}"
+						},
+						{
+							"KeyName": "TaxBaseAmountInCoCodeCrcy",
+							"Value": "{TaxBaseAmountInCoCodeCrcy}"
+						},
+						{
+							"KeyName": "ValuationDiffAmtInCoCodeCrcy",
+							"Value": "{ValuationDiffAmtInCoCodeCrcy}"
+						},
+						{
+							"KeyName": "CashDiscountAmtInCoCodeCrcy",
+							"Value": "{CashDiscountAmtInCoCodeCrcy}"
+						},
+						{
+							"KeyName": "InvoiceAmtInCoCodeCrcy",
+							"Value": "{InvoiceAmtInCoCodeCrcy}"
+						},
+						{
+							"KeyName": "TransactionCurrency",
+							"Value": "{TransactionCurrency}"
+						},
+						{
+							"KeyName": "AmountInTransactionCurrency",
+							"Value": "{AmountInTransactionCurrency}"
+						},
+						{
+							"KeyName": "OriginalTaxBaseAmount",
+							"Value": "{OriginalTaxBaseAmount}"
+						},
+						{
+							"KeyName": "TaxAmount",
+							"Value": "{TaxAmount}"
+						},
+						{
+							"KeyName": "TaxBaseAmountInTransCrcy",
+							"Value": "{TaxBaseAmountInTransCrcy}"
+						},
+						{
+							"KeyName": "WithholdingTaxBaseAmount",
+							"Value": "{WithholdingTaxBaseAmount}"
+						},
+						{
+							"KeyName": "PlannedAmtInTransactionCrcy",
+							"Value": "{PlannedAmtInTransactionCrcy}"
+						},
+						{
+							"KeyName": "CashDiscountBaseAmount",
+							"Value": "{CashDiscountBaseAmount}"
+						},
+						{
+							"KeyName": "CashDiscountAmount",
+							"Value": "{CashDiscountAmount}"
+						},
+						{
+							"KeyName": "NetPaymentAmount",
+							"Value": "{NetPaymentAmount}"
+						},
+						{
+							"KeyName": "WithholdingTaxAmount",
+							"Value": "{WithholdingTaxAmount}"
+						},
+						{
+							"KeyName": "WithholdingTaxExemptionAmt",
+							"Value": "{WithholdingTaxExemptionAmt}"
+						},
+						{
+							"KeyName": "InvoiceAmountInFrgnCurrency",
+							"Value": "{InvoiceAmountInFrgnCurrency}"
+						},
+						{
+							"KeyName": "BalanceTransactionCurrency",
+							"Value": "{BalanceTransactionCurrency}"
+						},
+						{
+							"KeyName": "AmountInBalanceTransacCrcy",
+							"Value": "{AmountInBalanceTransacCrcy}"
+						},
+						{
+							"KeyName": "AdditionalCurrency1",
+							"Value": "{AdditionalCurrency1}"
+						},
+						{
+							"KeyName": "ValuationDiffAmtInAddlCrcy1",
+							"Value": "{ValuationDiffAmtInAddlCrcy1}"
+						},
+						{
+							"KeyName": "AmountInAdditionalCurrency1",
+							"Value": "{AmountInAdditionalCurrency1}"
+						},
+						{
+							"KeyName": "AdditionalCurrency2",
+							"Value": "{AdditionalCurrency2}"
+						},
+						{
+							"KeyName": "AmountInAdditionalCurrency2",
+							"Value": "{AmountInAdditionalCurrency2}"
+						},
+						{
+							"KeyName": "ValuationDiffAmtInAddlCrcy2",
+							"Value": "{ValuationDiffAmtInAddlCrcy2}"
+						},
+						{
+							"KeyName": "PaymentCurrency",
+							"Value": "{PaymentCurrency}"
+						},
+						{
+							"KeyName": "AmountInPaymentCurrency",
+							"Value": "{AmountInPaymentCurrency}"
+						},
+						{
+							"KeyName": "CreditControlAreaCurrency",
+							"Value": "{CreditControlAreaCurrency}"
+						},
+						{
+							"KeyName": "HedgedAmount",
+							"Value": "{HedgedAmount}"
+						},
+						{
+							"KeyName": "BaseUnit",
+							"Value": "{BaseUnit}"
+						},
+						{
+							"KeyName": "Quantity",
+							"Value": "{Quantity}"
+						},
+						{
+							"KeyName": "GoodsMovementEntryUnit",
+							"Value": "{GoodsMovementEntryUnit}"
+						},
+						{
+							"KeyName": "QuantityInEntryUnit",
+							"Value": "{QuantityInEntryUnit}"
+						},
+						{
+							"KeyName": "PurchasingDocumentPriceUnit",
+							"Value": "{PurchasingDocumentPriceUnit}"
+						},
+						{
+							"KeyName": "PurchaseOrderQty",
+							"Value": "{PurchaseOrderQty}"
+						},
+						{
+							"KeyName": "MaterialPriceUnitQty",
+							"Value": "{MaterialPriceUnitQty}"
+						},
+						{
+							"KeyName": "NumberOfItems",
+							"Value": "{NumberOfItems}"
+						},
+						{
+							"KeyName": "AccountingDocumentCreationDate",
+							"Value": "{AccountingDocumentCreationDate}"
+						},
+						{
+							"KeyName": "CreationTime",
+							"Value": "{CreationTime}"
+						},
+						{
+							"KeyName": "LastChangeDate",
+							"Value": "{LastChangeDate}"
+						},
+						{
+							"KeyName": "ExchangeRateDate",
+							"Value": "{ExchangeRateDate}"
+						},
+						{
+							"KeyName": "AccountingDocCreatedByUser",
+							"Value": "{AccountingDocCreatedByUser}"
+						},
+						{
+							"KeyName": "TransactionCode",
+							"Value": "{TransactionCode}"
+						},
+						{
+							"KeyName": "IntercompanyTransaction",
+							"Value": "{IntercompanyTransaction}"
+						},
+						{
+							"KeyName": "DocumentReferenceID",
+							"Value": "{DocumentReferenceID}"
+						},
+						{
+							"KeyName": "RecurringAccountingDocument",
+							"Value": "{RecurringAccountingDocument}"
+						},
+						{
+							"KeyName": "ReverseDocument",
+							"Value": "{ReverseDocument}"
+						},
+						{
+							"KeyName": "ReverseDocumentFiscalYear",
+							"Value": "{ReverseDocumentFiscalYear}"
+						},
+						{
+							"KeyName": "AccountingDocumentHeaderText",
+							"Value": "{AccountingDocumentHeaderText}"
+						},
+						{
+							"KeyName": "ExchangeRate",
+							"Value": "{ExchangeRate}"
+						},
+						{
+							"KeyName": "BusinessTransactionType",
+							"Value": "{BusinessTransactionType}"
+						},
+						{
+							"KeyName": "BatchInputSession",
+							"Value": "{BatchInputSession}"
+						},
+						{
+							"KeyName": "FinancialManagementArea",
+							"Value": "{FinancialManagementArea}"
+						},
+						{
+							"KeyName": "ReversalIsPlanned",
+							"Value": "{ReversalIsPlanned}"
+						},
+						{
+							"KeyName": "PlannedReversalDate",
+							"Value": "{PlannedReversalDate}"
+						},
+						{
+							"KeyName": "TaxIsCalculatedAutomatically",
+							"Value": "{TaxIsCalculatedAutomatically}"
+						},
+						{
+							"KeyName": "TaxBaseAmountIsNetAmount",
+							"Value": "{TaxBaseAmountIsNetAmount}"
+						},
+						{
+							"KeyName": "SourceCompanyCode",
+							"Value": "{SourceCompanyCode}"
+						},
+						{
+							"KeyName": "LogicalSystem",
+							"Value": "{LogicalSystem}"
+						},
+						{
+							"KeyName": "TaxExchangeRate",
+							"Value": "{TaxExchangeRate}"
+						},
+						{
+							"KeyName": "ReversalReason",
+							"Value": "{ReversalReason}"
+						},
+						{
+							"KeyName": "Branch",
+							"Value": "{Branch}"
+						},
+						{
+							"KeyName": "Reference1InDocumentHeader",
+							"Value": "{Reference1InDocumentHeader}"
+						},
+						{
+							"KeyName": "Reference2InDocumentHeader",
+							"Value": "{Reference2InDocumentHeader}"
+						},
+						{
+							"KeyName": "InvoiceReceiptDate",
+							"Value": "{InvoiceReceiptDate}"
+						},
+						{
+							"KeyName": "Ledger",
+							"Value": "{Ledger}"
+						},
+						{
+							"KeyName": "LedgerGroup",
+							"Value": "{LedgerGroup}"
+						},
+						{
+							"KeyName": "AlternativeReferenceDocument",
+							"Value": "{AlternativeReferenceDocument}"
+						},
+						{
+							"KeyName": "TaxReportingDate",
+							"Value": "{TaxReportingDate}"
+						},
+						{
+							"KeyName": "AccountingDocumentClass",
+							"Value": "{AccountingDocumentClass}"
+						},
+						{
+							"KeyName": "ExchangeRateType",
+							"Value": "{ExchangeRateType}"
+						},
+						{
+							"KeyName": "LatePaymentReason",
+							"Value": "{LatePaymentReason}"
+						},
+						{
+							"KeyName": "SalesDocumentCondition",
+							"Value": "{SalesDocumentCondition}"
+						},
+						{
+							"KeyName": "IsReversal",
+							"Value": "{IsReversal}"
+						},
+						{
+							"KeyName": "IsReversed",
+							"Value": "{IsReversed}"
+						}
+					],
+					"Layout": {
+						"NumberOfColumns": 2
+					},
+					"MaxItemCount": 1,
+					"_Name": "SectionKeyValue0",
+					"_Type": "Section.Type.KeyValue"
+				}
+			],
+			"DataSubscriptions": [],
+			"_Type": "Control.Type.SectionedTable",
+			"_Name": "SectionedTable"
+		}
+	],
+	"_Type": "Page",
+	"_Name": "A_OperationalAcctgDocItemCube_Detail",
+	"PrefersLargeCaption": true
+}

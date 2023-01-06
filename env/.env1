@@ -1,0 +1,3 @@
+http://127.0.0.1","proxyPort":"8887"}]
+cds_requires={"AccountingDocument_Read":{"impl":"@sap/cds/libx/_runtime/remote/Service.js","external":true,"kind":"odata-v2","model":"srv/external/AccountingDocument_Read","credentials":{"path":"s4hanacloud/sap/opu/odata/sap/API_OPLACCTGDOCITEMCUBE_SRV","url":"https://sandbox.api.sap.com/s4hanacloud/sap/opu/odata/sap/API_OPLACCTGDOCITEMCUBE_SRV/A_OperationalAcctgDocItemCube?$top=50&$inlinecount=allpages","headers":{"ApiKey":"w3aqE64rsfc8HnZU2O0biapA1uW8lM6f"}}}}
+VCAP_SERVICES={}
